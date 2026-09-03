@@ -1,0 +1,21 @@
+# Dependencies and builds
+node_modules/
+dist/
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python environment used for ChromaDB
+.chroma-venv/
+
+# Generated local data
+chroma-data/
+.cache/
+server/data/*.json
+uploads/
+
+# Medical source files
+documents/*.pdf

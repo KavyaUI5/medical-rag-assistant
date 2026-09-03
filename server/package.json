@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "chroma": "chroma run --path ../chroma-data",
+    "process-documents": "tsx src/scripts/processDocuments.ts",
+    "index-local-documents": "tsx src/scripts/local/indexLocalDocuments.ts",
+    "test:embedding": "tsx src/scripts/local/testLocalEmbedding.ts",
+    "test:chroma": "tsx src/scripts/local/testChromaConnection.ts",
+    "test:search": "tsx src/scripts/local/testLocalVectorSearch.ts",
+    "test:ollama": "tsx src/scripts/local/testOllamaChat.ts",
+    "test:rag": "tsx src/scripts/local/testLocalRag.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "@langchain/textsplitters": "^1.0.1",
+    "chromadb": "^3.5.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.13.3",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.2.2",
+    "tsx": "^4.23.12",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}

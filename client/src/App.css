@@ -1,0 +1,171 @@
+#root {
+  min-height: 100vh;
+}
+
+.assistant-page {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #176b5b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #153b36;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.hero-description {
+  max-width: 680px;
+  color: #526663;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.safety-notice {
+  margin-bottom: 20px;
+  padding: 16px 18px;
+  border-left: 4px solid #d97706;
+  border-radius: 8px;
+  background: #fffbeb;
+  color: #78450a;
+  line-height: 1.5;
+}
+
+.assistant-card {
+  padding: 28px;
+  border: 1px solid #dce7e5;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgb(27 74 67 / 10%);
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  margin-top: 8px;
+  color: #173f39;
+  font-weight: 700;
+}
+
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #b9ccc8;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #172b28;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+select:focus,
+textarea:focus {
+  border-color: #197565;
+  outline: 3px solid rgb(25 117 101 / 16%);
+}
+
+.submit-button {
+  min-height: 48px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 10px;
+  background: #176b5b;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #105448;
+}
+
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.loading-message,
+.error-message {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.loading-message {
+  background: #edf8f5;
+  color: #155e52;
+}
+
+.error-message {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.answer-section {
+  margin-top: 30px;
+  border-top: 1px solid #dce7e5;
+  padding-top: 24px;
+}
+
+.answer-section h2 {
+  color: #173f39;
+}
+
+.answer-content {
+  color: #263d39;
+  line-height: 1.7;
+}
+
+.citation-list {
+  display: grid;
+  gap: 12px;
+}
+
+.citation-card {
+  padding: 16px;
+  border: 1px solid #dce7e5;
+  border-radius: 10px;
+  background: #f7fbfa;
+}
+
+.citation-card h3 {
+  margin: 0 0 8px;
+  color: #176b5b;
+}
+
+.citation-card p {
+  margin: 4px 0;
+  color: #526663;
+}
+
+.disclaimer {
+  margin-top: 24px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #f4f5f5;
+  color: #5d6866;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
