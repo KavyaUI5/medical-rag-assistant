@@ -461,18 +461,6 @@ npm run build
 - Conversation history and authentication are not implemented.
 - The project is not validated for clinical or production use.
 
-## Future improvements
-
-- Admin PDF upload, listing, replacement, and deletion
-- Authentication and role-based admin access
-- Page-aware PDF extraction and page-level citations
-- Hybrid keyword/vector retrieval and reranking
-- Streaming Ollama responses
-- Conversation history and feedback
-- Retrieval evaluation dataset and quality metrics
-- Containerized services and deployment automation
-- Observability, audit logging, and production safety controls
-
 ## Portfolio summary
 
 Developed an end-to-end educational Medical RAG Assistant using React, TypeScript, Node.js, Express, MiniLM embeddings, ChromaDB, and Ollama. Implemented PDF processing, recursive chunking, vector indexing, automatic multi-category routing, relevance filtering, diversified retrieval, grounded generation, citations, safety fallbacks, REST APIs, and automated tests.
